@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  entifix-cars:
+    image: "node:10.4"
+    working_dir: /src
+    command: bash -c "npm install && npm start"
+    volumes: 
+      - ./entifix-cars:/src
+    ports:
+      - 3000:3000
+    links:
+      - mongodb
+    depends_on: 
+      - mongodb
+    
+  mongodb:
+    image: "mongo:3.6"
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo/entrypoint:/docker-entrypoint-initdb.d/
+      - ./mongo/datadb:/data/db
+    command: mongod --noauth

@@ -1,0 +1,26 @@
+{
+  "name": "entifix-cars",
+  "version": "1.0.0",
+  "description": "Example to create a simple entifix app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "npm run compile && node dist/server.js"
+  },
+  "keywords": [
+    "entifix",
+    "typescript",
+    "mongoose",
+    "express"
+  ],
+  "author": "herber230",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "entifix-ts-backend": "^0.12.4"
+  }
+}

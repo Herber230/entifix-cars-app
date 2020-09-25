@@ -1,0 +1,435 @@
+{
+	"info": {
+		"_postman_id": "ded6e4c3-e694-4692-bab1-7a682fa3ed02",
+		"name": "EntifixCarsApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brand - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/api/brand",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brand - Get One",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/brand/5f6d6173eda5dd004cf09d0f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"brand",
+						"5f6d6173eda5dd004cf09d0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brand - Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Ferrari\",\n\t\"country\": \"Italy\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/brand",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brand - Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"5f6d6104eda5dd004cf09d0c\",\n\t\"country\": \"Germany\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/brand",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brand - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/brand/5f6d6178eda5dd004cf09d10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"brand",
+						"5f6d6178eda5dd004cf09d10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d652eeda5dd004cf09d11/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d652eeda5dd004cf09d11",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Get One",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d6173eda5dd004cf09d0f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d6173eda5dd004cf09d0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idBrand\": \"5f6d8bf93d4988002ef61e67\",\n\t\"lineName\": \"Enzo\",\n\t\"year\": 2002,\n\t\"color\": \"Red\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/car",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"5f6d652eeda5dd004cf09d11\",\n\t\"color\": \"Black\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/car",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d6173eda5dd004cf09d0f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d6173eda5dd004cf09d0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - List Characteristics ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"charName\": \"cc\",\n\t\"charValue\": \"5000\"\n}\n\n\n\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d652eeda5dd004cf09d11/characteristics",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d652eeda5dd004cf09d11",
+						"characteristics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Get One Characteristic",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"charName\": \"cc\",\n\t\"charValue\": \"5000\"\n}\n\n\n\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d652eeda5dd004cf09d11/characteristics/5f6d89753d4988002ef61e66",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d652eeda5dd004cf09d11",
+						"characteristics",
+						"5f6d89753d4988002ef61e66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Add Characteristic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"charName\": \"cc\",\n\t\"charValue\": \"5000\"\n}\n\n\n\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d652eeda5dd004cf09d11/characteristics",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d652eeda5dd004cf09d11",
+						"characteristics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Delete Characteristic",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"charName\": \"cc\",\n\t\"charValue\": \"5000\"\n}\n\n\n\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/car/5f6d652eeda5dd004cf09d11/characteristics/5f6d89753d4988002ef61e66",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"5f6d652eeda5dd004cf09d11",
+						"characteristics",
+						"5f6d89753d4988002ef61e66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car - Query recent German cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/api/car?fixed_filter=brand.country|eq|Germany&fixed_filter=year|gt|2015",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car"
+					],
+					"query": [
+						{
+							"key": "fixed_filter",
+							"value": "brand.country|eq|Germany"
+						},
+						{
+							"key": "fixed_filter",
+							"value": "year|gt|2015"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

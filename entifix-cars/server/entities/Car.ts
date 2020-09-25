@@ -59,8 +59,8 @@ class Car extends EMEntity implements ICar
     set brand(value : Brand)
     { (this._document as ICarModel).idBrand = value && value._id ? value._id.toString() : null; this._brand = value; }
 
-    @DefinedAccessor({ exposition: ExpositionType.Normal, schema: { type: String }, 
-        activator: new EMMemberActivator(Characteristic.getInfo(), MemberBindingType.Reference, true)
+    @DefinedAccessor({ exposition: ExpositionType.Normal, schema: { type: Array }, 
+        activator: new EMMemberActivator(Characteristic.getInfo(), MemberBindingType.Snapshot, true, { resourcePath: 'characteristics' })
     })
     get characteristics() : Array<Characteristic>
     { return this._characteristics; }

@@ -13,3 +13,7 @@ docker-compose up
 Please check the article on Medium with the step by step for this application.
 
 https://medium.com/@herbercolop/the-first-entifix-application-4bda3776950f
+
+## Examples
+
+Also there is a postman collection with request examples

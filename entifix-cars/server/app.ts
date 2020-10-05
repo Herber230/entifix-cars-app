@@ -1,6 +1,6 @@
 import {
     EntifixApplication, 
-    EntifixAppConfig
+    EntifixAppConfig, EntifixLoggerLevel
 } from 'entifix-ts-backend';
 
 import { Brand, IBrandModel } from './entities/Brand';
@@ -44,7 +44,9 @@ class App extends EntifixApplication
                 password: 'entifix123',
             },
             protectRoutes: { enable: false },
-            devMode: true            
+            cors: { enable: true },
+            devMode: true,
+            loggerLevel: EntifixLoggerLevel.TRACE            
         } 
         return config;
     }

@@ -21,6 +21,6 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "entifix-ts-backend": "^0.12.4"
+    "entifix-ts-backend": "^0.12.15"
   }
 }
